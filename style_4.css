@@ -1,0 +1,72 @@
+.container_page_4
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.crumbs
+{
+    padding-top: 60px;
+    padding-left: 20px;
+}
+
+.container_page_4_1
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.container_page_4_1 p
+{
+    color: #777777;
+}
+
+.info_1
+{
+    
+    color: #777777;
+}
+
+.container_page_4_2
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    text-align: center;
+}
+
+.base
+{
+    width: 700px;
+}
+
+@media all and (max-width: 740px)
+{
+    .container_page_4_2
+    {
+        flex: 0 0 100%;
+    }
+    
+    .base
+    {
+        width: 100%;
+        padding: 0 auto;
+    }
+    
+    .container_page_4_2>form
+    {
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+.maps
+{
+    margin-top: 50px;
+    width: 100%;
+}

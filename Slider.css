@@ -1,0 +1,259 @@
+
+    .slider {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 700px;
+      margin: 0 auto;
+    }
+
+    .slider__wrapper {
+      display: flex;
+      transition: transform 0.6s ease;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: flex-start;
+      width: 100%;
+      height: 100%;
+      color: white;
+        
+    }
+
+    .slider__item {
+      flex: 0 0 100%;
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+    }
+
+    @media (min-width: 980px) {
+      .slider__item {
+        flex: 0 0 100%;
+        width: 100%;
+      }
+    }
+
+    .slider__control {
+      position: absolute;
+      top: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 70px;
+      color: transparent;
+      text-align: center;
+      height: 70px;
+      transform: translateY(-50%);
+      background-color: transparent;
+      border-radius: 50%;
+      margin: 40px;
+      transition: .5s all ease;
+      
+    }
+
+.slider:hover .slider__control
+{
+  background-color: #15C1C6;
+  color: #fff;
+  
+}
+
+    .slider__control:hover,
+    a.slider__control:focus {
+      
+      text-decoration: none;
+      outline: 0;
+      opacity: .5;
+    }
+
+    .slider__control_left {
+      left: 0;
+    }
+
+    .slider__control_right {
+      right: 0;
+    }
+
+    .slider__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    .slider:hover .slider__control_left::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+    }
+
+    .slider:hover .slider__control_right::before {
+      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+    }
+
+.firstpict
+{
+  background-image: url('Image/Slider/image1.jpg');
+}
+
+.secondpict
+{
+  background-image: url('Image/Slider/image2.jpg');
+}
+
+.thirdpict
+{
+  background-image: url('Image/Slider/image3.jpg');
+}
+
+.size_box
+{
+    padding: 300px 0 300px 0;
+}
+
+.font_first
+{
+  position: relative;
+  display: flex;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.font_second
+{
+  
+  width: 100%;
+  font-size: 65px;
+  vertical-align: middle;
+  text-align: center;
+  
+}
+
+.font_third
+{
+  
+  width: 55%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+  
+}
+
+.button_first
+{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  background-color: #15C1C6;
+  color: white;
+  text-decoration: none;
+  transition: .5s all ease;
+}
+
+.button_first:hover
+{
+  background-color: white;
+  color: black;
+  
+}
+
+@media (max-width: 1020px) 
+  {
+    .font_second
+      {
+        font-size: 40px;
+      }
+      
+    .size_box
+      {
+        padding: 150px 0 150px 0;
+      }
+      
+    .slider 
+      {
+        height: 500px;
+      }
+  }
+
+@media (max-width: 630px)
+{
+     .size_box
+      {
+        padding-top: 100px;
+      } 
+    
+    .font_second
+      {
+        font-size: 30px;
+      }
+}
+
+@media (max-width: 490px) 
+  {
+    .slider
+      {
+          height: 400px;
+      }
+      
+    .firstpict
+      {
+          padding-top: 40px;
+      }
+      
+    .font_third
+      {
+          width: auto;
+          padding-bottom: 10px;
+      }
+      
+      .slider__control 
+      {
+          margin: 0;
+      }
+      
+      .button_first
+     {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          padding-left: 20px;
+          padding-right: 20px;
+          border-radius: 30px;
+     }
+      
+  }
+
+@media (max-width: 300px)
+{
+    .size_box
+    {
+        padding-top: 54px;
+    }
+    
+    .firstpict
+      {
+        padding-top: 10px;
+      }
+    
+    
+    .font_second
+      {
+        font-size: 30px;
+      }  
+      
+    .font_third
+      {
+         width: 100%;
+         font-size: 15px;
+      }
+    
+}
+

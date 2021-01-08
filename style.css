@@ -474,7 +474,6 @@ ul.Menu>li.check_color>a.menu_1
 {
   
   top: 36%;
-  word-break: break-word;
 }
 
 }
@@ -491,7 +490,7 @@ ul.Menu>li.check_color>a.menu_1
 {
   display: block;
   position: relative;
-  
+  word-break: break-word;
   
 }
 
@@ -508,7 +507,7 @@ ul.Menu>li.check_color>a.menu_1
 
 }
 
-@media all and (max-width: 430px)
+@media all and (max-width: 240px)
 {
     .Logotip
   {
